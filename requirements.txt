@@ -1,0 +1,7 @@
+yfinance
+pandas
+pyarrow
+pyyaml
+scikit-learn
+joblib
+dukascopy-python
