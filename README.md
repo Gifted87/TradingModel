@@ -147,6 +147,18 @@ Report:
 data/reports/gold_transformer_backtest.json
 ~~~
 
+## Offline RL policy
+
+The RL layer treats the frozen Transformer as the market-state predictor. It receives the range probabilities, expected return, confidence, and cause-window statistics, then chooses one of seven actions: no trade, long at three sizes, or short at three sizes.
+
+Train the offline contextual-bandit policy with:
+
+~~~powershell
+python src/train_rl_policy.py --config configs/gold.yaml --epochs 8 --cost 0.50
+~~~
+
+The reward is net price movement after the configured round-trip cost. The policy is trained chronologically and evaluated on the final unseen period. Outputs are written to data/models/gold_rl_policy.pt, data/models/gold_rl_preprocessing.npz, and data/models/gold_rl_metrics.json.
+
 ## Range prediction and guessing
 
 The model produces a probability for every movement range. The guessing policy ranks those probabilities:
