@@ -1,0 +1,81 @@
+{
+  "test_examples": 165297,
+  "overall_class_accuracy": 0.2075657755434158,
+  "top_3_accuracy": 0.5616617361476615,
+  "direction_by_threshold": {
+    "0.0": {
+      "coverage": 1.0,
+      "accuracy": 0.5036268050841818,
+      "examples": 165297
+    },
+    "0.25": {
+      "coverage": 0.0,
+      "accuracy": 0.0,
+      "examples": 0
+    },
+    "0.5": {
+      "coverage": 0.0,
+      "accuracy": 0.0,
+      "examples": 0
+    },
+    "1.0": {
+      "coverage": 0.0,
+      "accuracy": 0.0,
+      "examples": 0
+    },
+    "1.5": {
+      "coverage": 0.0,
+      "accuracy": 0.0,
+      "examples": 0
+    }
+  },
+  "simple_cause_sum_baseline": {
+    "coverage": 0.999945552550863,
+    "accuracy": 0.4925402933062291,
+    "examples": 165288
+  },
+  "shuffled_input_placebo": {
+    "coverage": 1.0,
+    "accuracy": 0.5013884099529937,
+    "examples": 165297
+  },
+  "target_shift_-1_bars": {
+    "coverage": 1.0,
+    "accuracy": 0.502501557802017,
+    "examples": 165297
+  },
+  "target_shift_1_bars": {
+    "coverage": 1.0,
+    "accuracy": 0.48666339981971846,
+    "examples": 165297
+  },
+  "by_year": {
+    "2024": {
+      "examples": 55276,
+      "class_accuracy": 0.17566394095086474,
+      "direction": {
+        "coverage": 1.0,
+        "accuracy": 0.5048483971343802,
+        "examples": 55276
+      }
+    },
+    "2025": {
+      "examples": 67387,
+      "class_accuracy": 0.19831718283942007,
+      "direction": {
+        "coverage": 1.0,
+        "accuracy": 0.5058690845415288,
+        "examples": 67387
+      }
+    },
+    "2026": {
+      "examples": 42634,
+      "class_accuracy": 0.2635455270441432,
+      "direction": {
+        "coverage": 1.0,
+        "accuracy": 0.49849885068255384,
+        "examples": 42634
+      }
+    }
+  }
+}

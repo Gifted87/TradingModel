@@ -1,0 +1,76 @@
+PyTorch CPU threads: 8
+Loading dataset from data\processed\gold_1m_continuous_45m_cause_5m_effect.parquet...
+PROTOTYPING SLICE: using most recent 300,000 examples.
+Dataset loaded in 1.4s | Total: 300,000 | Train: 210,000 | Valid: 45,000 | Test: 45,000
+Model: Continuous Hybrid Inception-1D + Transformer | seq_len=45 -> 15 tokens | d_model=64 | layers=2 | batch=8192 | epochs=8
+
+=== TRAINING START ===
+
+--- Epoch 1/8 ---
+  [Train E01] Batch 010/026 ( 38.5%) | Loss: 2.2227 | Acc: 15.71% | Elapsed: 94.7s
+  [Train E01] Batch 020/026 ( 76.9%) | Loss: 2.1976 | Acc: 16.73% | Elapsed: 189.3s
+  [Train E01] Batch 026/026 (100.0%) | Loss: 2.1912 | Acc: 16.94% | Elapsed: 248.1s
+==> Epoch 01 done in 248.1s | Train loss=2.1912 acc=16.94% | Val loss=2.3047 acc=22.30% top3=55.34% dir=50.30%
+  *** New best checkpoint at epoch 1 (val_loss=2.3047) ***
+
+--- Epoch 2/8 ---
+  [Train E02] Batch 010/026 ( 38.5%) | Loss: 2.1603 | Acc: 17.82% | Elapsed: 92.0s
+  [Train E02] Batch 020/026 ( 76.9%) | Loss: 2.1615 | Acc: 17.90% | Elapsed: 198.6s
+  [Train E02] Batch 026/026 (100.0%) | Loss: 2.1604 | Acc: 17.91% | Elapsed: 270.3s
+==> Epoch 02 done in 270.3s | Train loss=2.1604 acc=17.91% | Val loss=2.2073 acc=25.42% top3=60.79% dir=51.18%
+  *** New best checkpoint at epoch 2 (val_loss=2.2073) ***
+
+--- Epoch 3/8 ---
+  [Train E03] Batch 010/026 ( 38.5%) | Loss: 2.1542 | Acc: 18.12% | Elapsed: 109.2s
+  [Train E03] Batch 020/026 ( 76.9%) | Loss: 2.1556 | Acc: 17.96% | Elapsed: 211.4s
+  [Train E03] Batch 026/026 (100.0%) | Loss: 2.1557 | Acc: 17.93% | Elapsed: 266.3s
+==> Epoch 03 done in 266.3s | Train loss=2.1557 acc=17.93% | Val loss=2.1974 acc=25.62% top3=61.28% dir=51.07%
+  *** New best checkpoint at epoch 3 (val_loss=2.1974) ***
+
+--- Epoch 4/8 ---
+  [Train E04] Batch 010/026 ( 38.5%) | Loss: 2.1523 | Acc: 18.17% | Elapsed: 101.0s
+  [Train E04] Batch 020/026 ( 76.9%) | Loss: 2.1527 | Acc: 18.19% | Elapsed: 215.4s
+  [Train E04] Batch 026/026 (100.0%) | Loss: 2.1531 | Acc: 18.19% | Elapsed: 288.2s
+==> Epoch 04 done in 288.2s | Train loss=2.1531 acc=18.19% | Val loss=2.1944 acc=25.69% top3=61.54% dir=51.01%
+  *** New best checkpoint at epoch 4 (val_loss=2.1944) ***
+
+--- Epoch 5/8 ---
+  [Train E05] Batch 010/026 ( 38.5%) | Loss: 2.1512 | Acc: 18.55% | Elapsed: 121.4s
+  [Train E05] Batch 020/026 ( 76.9%) | Loss: 2.1517 | Acc: 18.38% | Elapsed: 231.3s
+  [Train E05] Batch 026/026 (100.0%) | Loss: 2.1516 | Acc: 18.41% | Elapsed: 292.5s
+==> Epoch 05 done in 292.6s | Train loss=2.1516 acc=18.41% | Val loss=2.1942 acc=25.45% top3=61.41% dir=51.09%
+  *** New best checkpoint at epoch 5 (val_loss=2.1942) ***
+
+--- Epoch 6/8 ---
+  [Train E06] Batch 010/026 ( 38.5%) | Loss: 2.1502 | Acc: 18.43% | Elapsed: 147.5s
+  [Train E06] Batch 020/026 ( 76.9%) | Loss: 2.1514 | Acc: 18.52% | Elapsed: 263.0s
+  [Train E06] Batch 026/026 (100.0%) | Loss: 2.1511 | Acc: 18.43% | Elapsed: 317.5s
+==> Epoch 06 done in 317.5s | Train loss=2.1511 acc=18.43% | Val loss=2.1974 acc=25.42% top3=61.09% dir=51.15%
+
+--- Epoch 7/8 ---
+  [Train E07] Batch 010/026 ( 38.5%) | Loss: 2.1510 | Acc: 18.31% | Elapsed: 89.9s
+  [Train E07] Batch 020/026 ( 76.9%) | Loss: 2.1505 | Acc: 18.30% | Elapsed: 199.1s
+  [Train E07] Batch 026/026 (100.0%) | Loss: 2.1509 | Acc: 18.30% | Elapsed: 249.4s
+==> Epoch 07 done in 249.4s | Train loss=2.1509 acc=18.30% | Val loss=2.1942 acc=25.50% top3=61.37% dir=51.08%
+  *** New best checkpoint at epoch 7 (val_loss=2.1942) ***
+
+--- Epoch 8/8 ---
+  [Train E08] Batch 010/026 ( 38.5%) | Loss: 2.1499 | Acc: 18.22% | Elapsed: 91.0s
+  [Train E08] Batch 020/026 ( 76.9%) | Loss: 2.1496 | Acc: 18.28% | Elapsed: 190.2s
+  [Train E08] Batch 026/026 (100.0%) | Loss: 2.1506 | Acc: 18.31% | Elapsed: 241.0s
+==> Epoch 08 done in 241.0s | Train loss=2.1506 acc=18.31% | Val loss=2.1941 acc=25.52% top3=61.34% dir=51.11%
+  *** New best checkpoint at epoch 8 (val_loss=2.1941) ***
+
+=== OUT-OF-SAMPLE TEST EVALUATION ===
+
+==========================================
+      OUT-OF-SAMPLE TEST RESULTS          
+==========================================
+9-Bin Range Accuracy:  35.40%
+Top-3 Range Accuracy:  77.37%
+Directional Accuracy:  50.72%
+Continuous MAE:        3.3588
+Best Epoch:            8
+Checkpoint saved to:   data\models\gold_continuous_hybrid_transformer_oos.pt
+==========================================
+

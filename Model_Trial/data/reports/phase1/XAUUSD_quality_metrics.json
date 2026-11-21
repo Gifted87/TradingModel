@@ -1,0 +1,21 @@
+{
+  "symbol": "XAUUSD",
+  "total_bars": 1680380,
+  "start_time": "2003-05-05 00:00:00",
+  "end_time": "2026-08-21 20:55:00",
+  "total_trading_gaps_gt_5m": 5220,
+  "max_gap_duration_mins": 4590.0,
+  "pct_bars_with_gaps": 0.31064402099525107,
+  "bad_print_spikes": 105,
+  "pct_bad_prints": 0.00624858662921482,
+  "negative_spread_count": 0,
+  "median_spread": 0.38000000000010914,
+  "max_spread": 14.05399999999986,
+  "spread_blowout_count": 0,
+  "zero_volume_bars": 35248,
+  "pct_zero_volume": 2.0976207762529904,
+  "total_anomalous_bars": 5325,
+  "bad_bar_ratio": 0.3168926076244659,
+  "gate1_passed": true,
+  "verdict": "GATE 1 PASS: 0.317% anomalous bars (< 0.5% threshold)"
+}

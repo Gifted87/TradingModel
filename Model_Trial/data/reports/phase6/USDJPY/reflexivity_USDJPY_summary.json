@@ -1,0 +1,38 @@
+{
+  "n_trades": 3588,
+  "hit_rate": 0.5039018952062431,
+  "avg_r_multiple": -0.009881624895743712,
+  "expectancy_net_log": -6.236162661092895e-05,
+  "expectancy_in_spreads": -1.4205799184593706,
+  "profit_factor": 0.7835844703371353,
+  "max_drawdown_log": 0.2254540086085794,
+  "avg_bars_held": 4.97463768115942,
+  "exit_reasons": [
+    {
+      "exit_reason": "time",
+      "count": 2228
+    },
+    {
+      "exit_reason": "stop",
+      "count": 600
+    },
+    {
+      "exit_reason": "target",
+      "count": 760
+    }
+  ],
+  "by_side": [
+    {
+      "side": -1,
+      "n": 2082,
+      "hit_rate": 0.4711815561959654,
+      "avg_net_log": -5.787371880254193e-05
+    },
+    {
+      "side": 1,
+      "n": 1506,
+      "hit_rate": 0.549136786188579,
+      "avg_net_log": -6.856602505519309e-05
+    }
+  ]
+}

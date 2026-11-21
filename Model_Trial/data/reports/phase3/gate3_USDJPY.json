@@ -1,0 +1,15 @@
+{
+  "total_features": 74,
+  "features_by_group": {
+    "G1": 12,
+    "G2": 10,
+    "G3": 18,
+    "G4": 15,
+    "G5": 16,
+    "G6": 11
+  },
+  "nan_leaking_features": [],
+  "zero_variance_features": [],
+  "gate3_passed": true,
+  "verdict": "GATE 3 PASS: 74 features, 0 NaN-leaking, 0 zero-variance."
+}

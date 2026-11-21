@@ -1,0 +1,51 @@
+{
+  "input": "raw Dukascopy 1-minute data with backward causal windows",
+  "window_rule": "windows[end_position - lookback + 1] ending at target_time - gap",
+  "checkpoint_warning": "Transformer checkpoint was trained on the prior leaked-window dataset; retrain is required for a clean result.",
+  "examples": 1101978,
+  "test_start": "2024-03-06 15:55:00+00:00",
+  "test_end": "2026-08-19 23:05:00+00:00",
+  "round_trip_cost": 0.5,
+  "results": {
+    "edge_0": {
+      "trades": 165297,
+      "total_pnl": -81967.77299446089,
+      "average_pnl": -0.4958817945544135,
+      "win_rate": 0.35795567977640247,
+      "max_drawdown": 82007.21499513311,
+      "direction_accuracy_before_cost": 0.497389547299709
+    },
+    "edge_0.25": {
+      "trades": 117316,
+      "total_pnl": -59456.28002601105,
+      "average_pnl": -0.5068045281633456,
+      "win_rate": 0.3515377271642402,
+      "max_drawdown": 59476.032026253524,
+      "direction_accuracy_before_cost": 0.4974598520235944
+    },
+    "edge_0.5": {
+      "trades": 83416,
+      "total_pnl": -42575.80701834883,
+      "average_pnl": -0.5104033640830156,
+      "win_rate": 0.3498249736261628,
+      "max_drawdown": 42595.263018676895,
+      "direction_accuracy_before_cost": 0.4964395319842716
+    },
+    "edge_1": {
+      "trades": 46626,
+      "total_pnl": -23556.737017847365,
+      "average_pnl": -0.5052274914821637,
+      "win_rate": 0.34491485437309655,
+      "max_drawdown": 23569.660018138355,
+      "direction_accuracy_before_cost": 0.4959250203748981
+    },
+    "edge_1.5": {
+      "trades": 11295,
+      "total_pnl": -5855.866005989257,
+      "average_pnl": -0.5184476322256979,
+      "win_rate": 0.33377600708278,
+      "max_drawdown": 5875.546005661134,
+      "direction_accuracy_before_cost": 0.4923417441345728
+    }
+  }
+}

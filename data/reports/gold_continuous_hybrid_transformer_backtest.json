@@ -1,0 +1,55 @@
+{
+  "model_type": "ContinuousHybridInceptionTransformer_45m_3groups",
+  "test_examples": 168255,
+  "round_trip_cost": 0.5,
+  "expected_return_mean": 0.008248378522694111,
+  "expected_return_std": 0.022659752517938614,
+  "results": {
+    "edge_0": {
+      "trades": 168255,
+      "total_pnl": -83186.97497214063,
+      "average_pnl": -0.4944101213761292,
+      "win_rate": 0.36747199191703067,
+      "max_drawdown": 83189.54097212537,
+      "profit_factor": 0.588186032086656,
+      "direction_accuracy_before_cost": 0.507241983893495,
+      "mean_actual_move": 0.005097613800353997
+    },
+    "edge_0.25": {
+      "trades": 0,
+      "total_pnl": 0.0,
+      "win_rate": 0.0,
+      "max_drawdown": 0.0,
+      "profit_factor": 0.0,
+      "direction_accuracy_before_cost": 0.0,
+      "mean_actual_move": 0.0
+    },
+    "edge_0.5": {
+      "trades": 0,
+      "total_pnl": 0.0,
+      "win_rate": 0.0,
+      "max_drawdown": 0.0,
+      "profit_factor": 0.0,
+      "direction_accuracy_before_cost": 0.0,
+      "mean_actual_move": 0.0
+    },
+    "edge_1": {
+      "trades": 0,
+      "total_pnl": 0.0,
+      "win_rate": 0.0,
+      "max_drawdown": 0.0,
+      "profit_factor": 0.0,
+      "direction_accuracy_before_cost": 0.0,
+      "mean_actual_move": 0.0
+    },
+    "edge_1.5": {
+      "trades": 0,
+      "total_pnl": 0.0,
+      "win_rate": 0.0,
+      "max_drawdown": 0.0,
+      "profit_factor": 0.0,
+      "direction_accuracy_before_cost": 0.0,
+      "mean_actual_move": 0.0
+    }
+  }
+}

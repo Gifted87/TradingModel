@@ -1,3 +1,26 @@
+# Local environments and generated indexes
+.freebuff/
 __pycache__/
-*.pyc
-data/
+.venv/
+compiled_codebase.txt
+kaggle_code.zip
+
+# Market data and generated artifacts
+data/raw/
+data/processed/
+data/models/
+Model_Trial/weights/
+Model_Trial/kaggle_results/
+*.parquet
+*.npy
+*.npz
+*.pt
+*.joblib
+
+# Credentials and secrets
+.env
+.env.*
+!.env.example
+
+# Packaged source archives
+*.zip

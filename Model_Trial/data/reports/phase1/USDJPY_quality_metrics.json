@@ -1,0 +1,21 @@
+{
+  "symbol": "USDJPY",
+  "total_bars": 1168494,
+  "start_time": "2007-03-27 00:00:00",
+  "end_time": "2026-08-23 21:35:00",
+  "total_trading_gaps_gt_5m": 929,
+  "max_gap_duration_mins": 2040485.0,
+  "pct_bars_with_gaps": 0.07950404537806784,
+  "bad_print_spikes": 41,
+  "pct_bad_prints": 0.0035087899467177407,
+  "negative_spread_count": 0,
+  "median_spread": 0.0049999999999954525,
+  "max_spread": 0.5369999999999777,
+  "spread_blowout_count": 140,
+  "zero_volume_bars": 68440,
+  "pct_zero_volume": 5.857111803740541,
+  "total_anomalous_bars": 970,
+  "bad_bar_ratio": 0.08301283532478557,
+  "gate1_passed": true,
+  "verdict": "GATE 1 PASS: 0.083% anomalous bars (< 0.5% threshold)"
+}

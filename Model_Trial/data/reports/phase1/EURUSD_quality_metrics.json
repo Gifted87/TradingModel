@@ -1,0 +1,21 @@
+{
+  "symbol": "EURUSD",
+  "total_bars": 1191112,
+  "start_time": "2007-01-01 00:00:00",
+  "end_time": "2026-08-23 21:15:00",
+  "total_trading_gaps_gt_5m": 965,
+  "max_gap_duration_mins": 2427940.0,
+  "pct_bars_with_gaps": 0.08101673058452942,
+  "bad_print_spikes": 13,
+  "pct_bad_prints": 0.001091417095957391,
+  "negative_spread_count": 0,
+  "median_spread": 3.0000000000196536e-05,
+  "max_spread": 0.0032600000000000406,
+  "spread_blowout_count": 0,
+  "zero_volume_bars": 68432,
+  "pct_zero_volume": 5.745219593119707,
+  "total_anomalous_bars": 978,
+  "bad_bar_ratio": 0.0821081476804868,
+  "gate1_passed": true,
+  "verdict": "GATE 1 PASS: 0.082% anomalous bars (< 0.5% threshold)"
+}

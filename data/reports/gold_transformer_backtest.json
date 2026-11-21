@@ -1,0 +1,51 @@
+{
+  "test_examples": 165297,
+  "round_trip_cost": 0.5,
+  "note": "Out-of-sample checkpoint trained only before the final 15 percent of this dataset.",
+  "expected_return_mean": 0.017570050433278084,
+  "expected_return_std": 0.030769484117627144,
+  "results": {
+    "edge_0": {
+      "trades": 165297,
+      "total_pnl": -83270.52898701525,
+      "average_pnl": -0.5037630990702509,
+      "win_rate": 0.3620271390285365,
+      "max_drawdown": 83275.0189871738,
+      "profit_factor": 0.5783279152942494,
+      "direction_accuracy_before_cost": 0.5036268050841818,
+      "mean_actual_move": 0.0058543044695052214
+    },
+    "edge_0.25": {
+      "trades": 0,
+      "total_pnl": 0.0,
+      "win_rate": 0.0,
+      "max_drawdown": 0.0,
+      "direction_accuracy_before_cost": 0.0,
+      "mean_actual_move": 0.0
+    },
+    "edge_0.5": {
+      "trades": 0,
+      "total_pnl": 0.0,
+      "win_rate": 0.0,
+      "max_drawdown": 0.0,
+      "direction_accuracy_before_cost": 0.0,
+      "mean_actual_move": 0.0
+    },
+    "edge_1": {
+      "trades": 0,
+      "total_pnl": 0.0,
+      "win_rate": 0.0,
+      "max_drawdown": 0.0,
+      "direction_accuracy_before_cost": 0.0,
+      "mean_actual_move": 0.0
+    },
+    "edge_1.5": {
+      "trades": 0,
+      "total_pnl": 0.0,
+      "win_rate": 0.0,
+      "max_drawdown": 0.0,
+      "direction_accuracy_before_cost": 0.0,
+      "mean_actual_move": 0.0
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "symbol": "EURUSD",
+  "b0_mean_mcc": 0.0,
+  "b0_mcc_near_zero": true,
+  "b1_qlike_lift_pct_folds": 0.9642857142857143,
+  "b1_beats_b0_majority": true,
+  "gate5_passed": true,
+  "verdict": "GATE 5 PASS: \u2705 B0 MCC\u22480 (mean=+0.0000); \u2705 B1 beats B0 on QLIKE in 54/56 folds (96%)"
+}

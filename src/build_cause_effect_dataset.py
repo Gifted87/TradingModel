@@ -23,7 +23,9 @@ def main() -> None:
 
     minute_close = raw["Close"].resample("1min").last()
     minute_change = minute_close.diff()
-    five_close = minute_close.resample("5min").last()
+    # Label each five-minute candle by its closing timestamp. This makes an
+    # effect at 01:05 equal close(01:05) - close(01:00).
+    five_close = minute_close.resample("5min", label="right", closed="right").last()
     effects = five_close.diff().dropna()
     lookback = int(config["lookback_minutes"])
     gap = int(config["gap_minutes"])
@@ -33,12 +35,15 @@ def main() -> None:
     windows = np.lib.stride_tricks.sliding_window_view(minute_values, lookback)
     end_times = effects.index - pd.Timedelta(minutes=gap)
     end_positions = minute_index.get_indexer(end_times)
-    valid = (end_positions >= lookback - 1) & (end_positions < len(windows))
+    # sliding_window_view[i] starts at i, so convert the desired end index
+    # into the corresponding backward-window start index.
+    start_positions = end_positions - lookback + 1
+    valid = (start_positions >= 0) & (start_positions < len(windows))
     valid_positions = np.where(valid)[0]
     valid_positions = valid_positions[~np.isnan(effects.to_numpy(dtype=float)[valid_positions])]
-    valid_positions = valid_positions[~np.isnan(windows[end_positions[valid_positions]]).any(axis=1)]
+    valid_positions = valid_positions[~np.isnan(windows[start_positions[valid_positions]]).any(axis=1)]
     targets = effects.to_numpy(dtype=np.float32)[valid_positions]
-    cause_windows = windows[end_positions[valid_positions]]
+    cause_windows = windows[start_positions[valid_positions]]
 
     quantiles = np.asarray(config["label_quantiles"], dtype=float)
     edges = np.unique(np.quantile(targets, quantiles))

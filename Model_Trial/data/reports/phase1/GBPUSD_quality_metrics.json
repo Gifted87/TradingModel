@@ -1,0 +1,21 @@
+{
+  "symbol": "GBPUSD",
+  "total_bars": 1160916,
+  "start_time": "2012-01-11 01:35:00",
+  "end_time": "2026-08-23 21:25:00",
+  "total_trading_gaps_gt_5m": 921,
+  "max_gap_duration_mins": 4325.0,
+  "pct_bars_with_gaps": 0.07933390529547357,
+  "bad_print_spikes": 13,
+  "pct_bad_prints": 0.0011198053950501156,
+  "negative_spread_count": 0,
+  "median_spread": 9.999999999998899e-05,
+  "max_spread": 0.0040000000000000036,
+  "spread_blowout_count": 0,
+  "zero_volume_bars": 68447,
+  "pct_zero_volume": 5.8959476826919435,
+  "total_anomalous_bars": 934,
+  "bad_bar_ratio": 0.08045371069052369,
+  "gate1_passed": true,
+  "verdict": "GATE 1 PASS: 0.080% anomalous bars (< 0.5% threshold)"
+}

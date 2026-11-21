@@ -1,0 +1,29 @@
+[16:52:17] Executing on device: cuda
+[16:52:17] Loading dataset from data/processed/gold_multiscale_45m_dataset.npz...
+[16:52:36] Dataset loaded: 1,749,580 examples (Train: 1,224,706, Val: 262,437, Test: 262,437)
+[16:52:36] Empirical Training Bin Means: [-1.7539000511169434, -0.6274999976158142, -0.2705000042915344, -0.08780000358819962, -0.00019999999494757503, 0.0869000032544136, 0.27320000529289246, 0.6345000267028809, 1.7299000024795532]
+[16:52:36] Soft Target Bandwidth: sigma=0.08 | Target Entropy: 0.951 / 2.197 (43.3% of uniform)
+
+--- Starting Inception-Conformer Training ---
+[16:56:59] Epoch 01/05 [259.7s] | Train Loss: 1.9868 (RPS: 0.1000) | Val Loss: 2.0299 | Val Acc: 41.70% | Val Top-3: 58.99% | Val Dir Acc: 41.16% | Val MAE: 0.4209
+[17:01:22] Epoch 02/05 [263.2s] | Train Loss: 1.9598 (RPS: 0.0992) | Val Loss: 1.9804 | Val Acc: 43.85% | Val Top-3: 65.45% | Val Dir Acc: 48.80% | Val MAE: 0.4229
+[17:05:45] Epoch 03/05 [262.5s] | Train Loss: 1.9534 (RPS: 0.0990) | Val Loss: 1.9982 | Val Acc: 44.07% | Val Top-3: 64.22% | Val Dir Acc: 49.58% | Val MAE: 0.4225
+[17:10:07] Epoch 04/05 [261.7s] | Train Loss: 1.9486 (RPS: 0.0989) | Val Loss: 1.9790 | Val Acc: 44.37% | Val Top-3: 65.71% | Val Dir Acc: 48.58% | Val MAE: 0.4211
+[17:14:31] Epoch 05/05 [264.2s] | Train Loss: 1.9448 (RPS: 0.0987) | Val Loss: 1.9944 | Val Acc: 43.51% | Val Top-3: 63.18% | Val Dir Acc: 46.76% | Val MAE: 0.4206
+
+Loaded Best Checkpoint from Epoch 4 for Out-Of-Sample Evaluation.
+
+==========================================
+      OUT-OF-SAMPLE TEST RESULTS          
+==========================================
+9-Bin Range Accuracy:  43.58%
+Top-3 Range Accuracy:  64.62%
+Directional Accuracy:  50.34%
+Continuous MAE:        1.2377
+Test RPS Score:        0.1513
+Best Epoch:            4
+Checkpoint saved to:   data/models/gold_multiscale_conformer_oos.pt
+==========================================
+
+[17:14:55] Saved model weights to data/models/gold_multiscale_conformer.pt and data/models/gold_multiscale_conformer_oos.pt
+[17:14:55] Log file saved to data/reports/train_multiscale_conformer.log

@@ -1,0 +1,16 @@
+[16:45:57] Reading raw 1-minute Parquet data from data\raw\XAUUSD_DUKASCOPY_1m.parquet...
+[16:46:00] Resampling and aligning to regular 1-minute continuous grid...
+[16:46:09] Regular 1-minute grid: 8,747,948 bars from 2010-01-01 00:02:00+00:00 to 2026-08-19 23:09:00+00:00
+[16:46:09] Computing continuous multi-scale features, volatility normalization, and session harmonics...
+[16:46:39] Extracted 28 continuous features per bar.
+[16:46:48] Candidate windows before continuity filtering: 1,749,580
+[16:46:48] Valid contiguous cause/effect examples: 1,749,580
+[16:46:48] Assembling 3D continuous sequence tensors...
+[16:58:35] Saving compressed dataset to data\processed\gold_multiscale_45m_dataset.npz...
+[17:04:33] [SUCCESS] Dataset generation complete in 1115.6s
+  - Total Examples: 1,749,580
+  - Input Sequence Shape: (1749580, 45, 28)
+  - Group Features Shape: (1749580, 12)
+  - Training Split Size (70%): 1,224,706 examples
+  - Zero-Leakage Target Bin Edges: [-36.91999816894531, -0.9290000200271606, -0.421999990940094, -0.14499999582767487, -0.029999999329447746, 0.029999999329447746, 0.14900000393390656, 0.4300000071525574, 0.9399999976158142, 34.459999084472656]
+  - Log written to: data\reports\build_continuous_multiscale_dataset.log
