@@ -1,26 +1,59 @@
-# Local environments and generated indexes
-.freebuff/
+# Byte-compiled / optimized / cache files
 __pycache__/
-.venv/
-compiled_codebase.txt
-kaggle_code.zip
+*.py[cod]
+*\.class
+.pytest_cache/
+**/.pytest_cache/
+.coverage
+htmlcov/
+.freebuff/
+**/.freebuff/
 
-# Market data and generated artifacts
+# Virtual environments
+.venv/
+**/.venv/
+env/
+venv/
+ENV/
+
+# Market data, caches, and generated artifacts
 data/raw/
 data/processed/
 data/models/
+Model_Trial/data/raw/
+Model_Trial/data/processed/
 Model_Trial/weights/
 Model_Trial/kaggle_results/
 *.parquet
 *.npy
 *.npz
 *.pt
+*.pth
 *.joblib
+*.bin
+*.h5
+*.ckpt
+*.onnx
+
+# Packaged source archives and local bundles
+*.zip
+*.tar.gz
+compiled_codebase.txt
+kaggle_code.zip
+dist/
+build/
+*.egg-info/
 
 # Credentials and secrets
 .env
 .env.*
 !.env.example
+*.pem
+*.key
 
-# Packaged source archives
-*.zip
+# OS and IDE artifacts
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
